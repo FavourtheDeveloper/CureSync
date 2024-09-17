@@ -9,6 +9,7 @@ import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import CurrencyExchangeIcon from '@mui/icons-material/CurrencyExchange';
 import SettingsIcon from '@mui/icons-material/Settings';
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
@@ -22,9 +23,9 @@ const Sidebar = () => {
       <div className="sidelinks p-3">
         <ul className="text-xs text-blue-600 font-medium">
           <li className="p-2 mb-2 flex items-center bg-blue-600 rounded-2xl text-white">
-            <GridViewIcon fontSize="small" className="mx-1" /> Overview
+            <GridViewIcon fontSize="small" className="mx-1" /><Link to={'/'}> Overview</Link>
           </li>
-          <li className="p-2 flex items-center"><GroupsIcon fontSize="small" className="mx-1" /> Patients</li>
+          <li className="p-2 flex items-center"><GroupsIcon fontSize="small" className="mx-1" /><Link to={'/patients'}>Patients</Link></li>
           <li className="p-2 flex items-center"><PermContactCalendarIcon fontSize="small" className="mx-1" /> Appointments</li>
           <li className="p-2 flex items-center"><PersonOutlineIcon fontSize="small" className="mx-1" /> Doctors</li>
           <li className="p-2 flex items-center"><HourglassFullIcon fontSize="small" className="mx-1" /> Departments</li>

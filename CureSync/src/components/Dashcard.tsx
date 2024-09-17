@@ -3,7 +3,7 @@ import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 
 const Dashcard = ({backg}) => {
   return (
-    <div className={`dashcard p-5 ${backg ? "bg-black text-white" : "bg-white text-black"}  rounded-xl w-56`}>
+    <div className={`dashcard mb-2 p-5 ${backg ? "bg-black text-white" : "bg-white text-black"}  rounded-xl w-56`}>
     <h1 className="flex text-sm items-center">
       <PersonOutlineIcon fontSize="large" className="mr-3 ml-2 bg-blue-600 text-white rounded-xl p-2" /> Total
       Doctors

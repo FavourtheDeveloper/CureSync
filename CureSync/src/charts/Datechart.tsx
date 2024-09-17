@@ -11,6 +11,7 @@ const Datechart = () => {
           "& .MuiPickersDay-root.Mui-selected": { backgroundColor: "blue", color: "white" }, // Selected day
           "& .MuiPickersDay-root:hover": { backgroundColor: "gray" }, // Hover effect for the days
           "& .MuiPickersDay-root.Mui-disabled": { color: "red" }, // Disabled days
+          "& .MuiCalendarPicker-root": { backgroundColor: "black", color: "white" },
         }}
         // Removed Tailwind className for cleaner styling
       />

@@ -44,7 +44,7 @@ const Home = () => {
             <Dashcard backg={false} />
             <Dashcard backg={false} />
 
-            <div className="flex justify-between items-center w-full mt-2">
+            <div className="flex justify-between items-center w-full">
               <div className="w-1/2">
                 <Barchart />
               </div>
