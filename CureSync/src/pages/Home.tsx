@@ -5,13 +5,15 @@ import WbSunnyIcon from "@mui/icons-material/WbSunny";
 import Dashcard from "../components/Dashcard";
 import Barchart from "../charts/Barchart";
 import Datechart from "../charts/Datechart";
+import Table from "../components/Tableclient";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
     <div className="flex">
       <Sidebar />
 
-      <div className="w-full p-5">
+      <div className="w-full ml-52 p-5">
         <div className="flex justify-between mb-6">
           <div>
             <h1 className="font-bold flex items-center text-2xl">
@@ -35,27 +37,39 @@ const Home = () => {
             />
           </div>
         </div>
+        <div className="bg-gray-200 rounded-2xl p-5">
+          <div className="dashboard flex justify-around flex-wrap flex-basis-4   ">
+            <Dashcard backg={true} />
+            <Dashcard backg={false} />
+            <Dashcard backg={false} />
+            <Dashcard backg={false} />
 
-        <div className="dashboard flex justify-around flex-wrap flex-basis-4 bg-gray-200 rounded-2xl p-5">
-         <Dashcard backg={true} />
-         <Dashcard backg={false} />
-         <Dashcard backg={false} />
-         <Dashcard backg={false}/>
-       
-
-        <div className="flex justify-between w-full mt-8">
-          <div className="w-1/2">
-          <Barchart />
-          </div>
-          <div className="w-full">
-          <Datechart />
+            <div className="flex justify-between items-center w-full mt-2">
+              <div className="w-1/2">
+                <Barchart />
+              </div>
+              <div className="w-1/2">
+                <Datechart />
+              </div>
+            </div>
           </div>
 
-          
+          <div className="patients bg-white p-5 rounded-2xl">
+            <div className="flex justify-between  mb-5   w-full">
+              <h1 className="font-bold">All Patients</h1>
+              <p className="text-blue-700 text-sm">See All</p>
+            </div>
+            <div>
+              <Table />
+            </div>
           </div>
-          </div>
-          </div>
+        </div>
+
+        <div className="footer w-full mt-3">
+          <Footer />
+        </div>
       </div>
+    </div>
   );
 };
 

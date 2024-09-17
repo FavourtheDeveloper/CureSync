@@ -12,7 +12,7 @@ import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 
 const Sidebar = () => {
   return (
-    <div className="w-52 mr-2 h-screen">
+    <div className="w-52 mr-2 h-screen fixed">
       <div className="headtext py-5 flex items-center w-full px-5">
         <h1 className="font-bold flex items-center text-yellow-600 text-2xl">
           <HealthAndSafetyIcon className="mr-1" /> CureSync
