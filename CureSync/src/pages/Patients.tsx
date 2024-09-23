@@ -8,6 +8,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import MailIcon from "@mui/icons-material/Mail";
 import passport from "../assets/passprt.jpg";
+import Datechart from "../charts/Datechart";
 
 const Patients = () => {
   return (
@@ -56,12 +57,79 @@ const Patients = () => {
                   </ul>
                 </div>
               </div>
+
+              <div className="bg-white p-3 rounded-2xl m-2 mt-5 text-dark">
+                <div className="flex justify-between p-2">
+                  <h1>Physical Exam:</h1>
+                  <LinearScaleIcon fontSize="small" />
+                </div>
+
+                <div className="flex justify-between w-full pt-2">
+                  <div className="text-sm p-2">
+                    <h2 className="text-xs pb-2 text-gray-400">Heart</h2>
+                    <h1>Blockage in left actery</h1>
+                  </div>
+
+                  <div className="text-sm p-2">
+                    <h2 className="text-xs pb-2 text-end text-gray-400">TA</h2>
+                    <h1>120 mins/Hg</h1>
+                  </div>
+
+                  
+
+                  
+                </div>
+                <hr className="mb-3 mt-1" />
+                <div className="flex justify-between w-full">
+                  <div className="text-sm p-2">
+                    <h2 className="text-xs pb-2 text-gray-400">Lungs</h2>
+                    <h1>Congestion in left side of chest</h1>
+                  </div>
+
+                  <div className="text-sm p-2">
+                    <h2 className="text-xs pb-2 text-end text-gray-400">FC</h2>
+                    <h1>72/mins</h1>
+                  </div>
+
+                  
+                </div>
+                <hr className="mb-3 mt-1" />
+
+                <div className="flex justify-between w-full">
+                  <div className="text-sm p-2">
+                    <h2 className="text-xs pb-2 text-gray-400">Abdomath</h2>
+                    <h1>Pain on right side</h1>
+                  </div>
+
+                  <div className="text-sm p-2">
+                    <h2 className="text-xs pb-2 text-end text-gray-400">Poids</h2>
+                    <h1>71.6 Kg</h1>
+                  </div>
+
+                  
+                </div>
+                <hr className="mb-3 mt-1" />
+
+                <div className="flex justify-between w-full">
+                  <div className="text-sm p-2">
+                    <h2 className="text-xs pb-2 text-gray-400">Volliura status</h2>
+                    <h1>S/P</h1>
+                  </div>
+
+                  <div className="text-sm p-2">
+                    <h2 className="text-xs pb-2 text-end text-gray-400">Poids</h2>
+                    <h1>71.6 Kg</h1>
+                  </div>
+
+                  
+                </div>
+              </div>
             </div>
 
             <div className="w-2/3">
               <div className="bg-white p-3 rounded-2xl m-2 text-dark">
                 <div className="flex justify-between p-2">
-                  <h1>Overview</h1>
+                  <h1>Overview:</h1>
                   <LinearScaleIcon fontSize="small" />
                 </div>
 
@@ -211,6 +279,17 @@ const Patients = () => {
                   </div>
                 </div>
                 
+              </div>
+
+              <div className="flex justify-between p-2">
+                <div className="w-1/2 bg-white justify-self-center rounded-2xl">
+                  <Datechart />
+                </div>
+
+                <div className="w-1/2">
+                  
+                </div>
+
               </div>
             </div>
           </div>
