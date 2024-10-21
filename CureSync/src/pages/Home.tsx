@@ -39,7 +39,7 @@ const Home = () => {
         </div>
         <div className="bg-gray-200 rounded-2xl p-5">
           <div className="dashboard flex justify-around flex-wrap flex-basis-4   ">
-            <Dashcard backg={true} />
+             <Dashcard backg={true} />
             <Dashcard backg={false} />
             <Dashcard backg={false} />
             <Dashcard backg={false} />

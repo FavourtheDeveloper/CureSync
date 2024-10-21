@@ -5,10 +5,12 @@ import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import LinearScaleIcon from "@mui/icons-material/LinearScale";
 import DeleteIcon from '@mui/icons-material/Delete';
+import CircleIcon from '@mui/icons-material/Circle';
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import MailIcon from "@mui/icons-material/Mail";
 import passport from "../assets/passprt.jpg";
 import Datechart from "../charts/Datechart";
+import Piechart from "../charts/Piechart";
 
 const Patients = () => {
   return (
@@ -281,12 +283,53 @@ const Patients = () => {
                 
               </div>
 
-              <div className="flex justify-between p-2">
+              <div className="flex justify-between p-2 gap-3">
                 <div className="w-1/2 bg-white justify-self-center rounded-2xl">
                   <Datechart />
+
+                  <div className="flex justify-between px-3">
+                    <h1 className="flex text-gray-400 items-center"> <CircleIcon
+                fontSize="small"
+                className="mr-2 text-blue-500"
+              />Current Steak</h1>
+                    <h1>4 days</h1>
+                  </div>
+
+                  <div className="flex justify-between p-3">
+                    <h1 className="flex text-gray-400 items-center"><CircleIcon
+                fontSize="small"
+                className="mr-2 text-red-500"
+              />Completed Days</h1>
+                    <h1>5 days</h1>
+                  </div>
                 </div>
 
-                <div className="w-1/2">
+                <div className="w-1/2 bg-white justify-self-center rounded-2xl pt-6">
+                  <Piechart />
+
+                  <div className="flex justify-between px-3 pt-6">
+                    <h1 className="flex text-gray-400 items-center"> <CircleIcon
+                fontSize="small"
+                className="mr-2 text-blue-500"
+              />Following Plan</h1>
+                    <h1>10</h1>
+                  </div>
+
+                  <div className="flex justify-between p-3">
+                    <h1 className="flex text-gray-400 items-center"><CircleIcon
+                fontSize="small"
+                className="mr-2 text-red-500"
+              />Skipped</h1>
+                    <h1>05</h1>
+                  </div>
+
+                  <div className="flex justify-between px-3">
+                    <h1 className="flex text-gray-400 items-center"> <CircleIcon
+                fontSize="small"
+                className="mr-2 text-blue-500"
+              />Outside Plan</h1>
+                    <h1>25</h1>
+                  </div>
                   
                 </div>
 

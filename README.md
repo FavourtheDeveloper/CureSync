@@ -1,2 +1,0 @@
-# CureSync
-Medical Admin Dashboard
